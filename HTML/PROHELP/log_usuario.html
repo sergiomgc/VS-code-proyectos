@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROHELP</title>
+    <link rel="stylesheet" href="style_log.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    
+</head>
+<body class="usuario">
+    <a href="index.html"> <img src="img/boton_inicio.png" height="100px" class="but_ini"></a>
+    <header >
+        <h1 class="area"> BIENVENID@</h1>
+        <h1 class="in_ses">inicia sesion</h1>
+    </header>
+    <section>
+        <div class="centr">
+            <form id="log_usuario">
+                <input type="text" id="Usuario" name="Usuario" placeholder="Usuario">
+                <input type="password" name="Contraseña"  placeholder="Password" >
+                <br><br>
+                <a href="trabajador.html" ><button type="button" > ingresar </button></a>
+            </form>
+        </div>
+
+        <button class="botDesplegable" type="button" id="hidetext_btn"> registrate </button>
+            <div class="desplegable" id="hidetext">                
+                <form name="formulario" id="registroForm">                                                        
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">                                                                           
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido">                                                                                           
+                    <input type="text" id="Direccion" name="Direccion" placeholder="Direccion">                                                                       
+                    <input type="text" id="Barrio" name="Barrio" placeholder="Barrio">                                                                                                                                                      
+                    <input type="text" id="Telefono" name="Telefono" placeholder="Telefono">                                                                         
+                    <input type="text" id="Fecha_nacimiento" name="Fecha_nacimiento" placeholder="Fecha de nacimiento">                                                                             
+                    <input type="text" id="Correo" name="Correo" placeholder="Correo">
+                    <button type="submit" id="enviarRegistro"> Enviar</button>                           
+                </form>
+                    
+            </div> 
+            <div id="resultadoRegistro"></div>            
+    </section>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('enviarRegistro').addEventListener('click', function() {
+            var form = document.getElementById('registroForm');
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'registro.php', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('resultadoRegistro').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+
+
+body{
+    background: #000000;
+    font-family: Arial;
+    margin: 10px;
+    padding: 10px; 
+    
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: flex;
+    font: 6.9em 'Montserrat';
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #15a8ec;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #18f7c6;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #6ef0c4;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #1a79f5;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #ffffff;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+section{
+    color: white;
+  
+}
+
+.intro{
+   
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #44f3a1;
+    width: fit-content;
+    position: relative;
+    left:370px;
+}
+
+.int{
+    width: 50%;
+    font-family: 'Rajdhani' , sans-serif;
+    text-justify: auto;
+    border: 6px solid rgb(19, 139, 238);
+    margin: 10px;
+    padding: 10px;
+    outline: 3px solid white;
+    border-radius: 10px;
+}
+
+.mision{
+    
+    width: fit-content;
+    color: #15a8ec;
+    font-family: 'Merriweather Sans' ,sans-serif;
+    position: relative;
+    left: 400px;
+}
+
+.mis{
+    width: 50%;
+    font-family:'Rajdhani' , sans-serif ;
+    text-justify: auto;
+    position: relative;
+    left: 240px;
+    top: 10px;
+    border: 6px solid rgba(13, 235, 142, 0.87);
+    margin: 10px;
+    padding: 10px;
+    outline: 3px solid white;
+    border-radius: 10px;
+}
+
+.vision{
+    width: fit-content;
+    color: #15ecbd;
+    font-family: 'Merriweather Sans' ,sans-serif;
+    position: relative;
+    left: 400px;
+}
+
+.vis{
+    width: 50%;
+    font-family: 'Rajdhani' , sans-serif;
+    text-justify: auto;
+    position: relative;
+    top: 50px;
+    border: 6px solid rgb(19, 139, 238);
+    margin: 10px;
+    padding: 10px;
+    outline: 3px solid white;
+    border-radius: 10px;
+}
+
+.par_uno{
+    display: flex;
+    margin: 0px 50px 0px
+    
+}     
+
+#imagen_uno{
+    position: relative;
+    left: 220px;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.par_dos{
+    display: flex;
+    margin: 50px 0px 0px;
+}
+
+#imagen_dos{
+    position:relative;
+    left: 110px;
+    top: 25px;
+    animation: zoom 5s infinite;
+}
+
+@keyframes zoom {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+.par_tres{
+    display: flex;
+    margin: 0px 50px 0px;   
+}
+
+#imagen_tres{
+    position: relative;
+    top: 60px;
+    left: 300px;
+}
+
+#ini_bot_sn{
+    position: relative;
+    left: 90%;
+    top: 50px;
+}

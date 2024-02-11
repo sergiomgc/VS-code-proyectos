@@ -1,0 +1,158 @@
+body{
+    position: relative;
+    top: 10px;
+    left: 550px;     
+}
+
+body.empleado{
+    background-image:url('img/fondo_usuario.png');
+    background-size:auto;
+    background-repeat: no-repeat;
+    width: fit-content; 
+}
+
+section{
+    background-size: cover;
+    width: fit-content; 
+    text-align: center;
+    padding: 10px;
+    background: rgb(2,167,96);
+    background: linear-gradient(90deg, rgba(2,167,96,0.6026785714285714) 0%, rgba(9,121,112,1) 48%, rgba(0,212,255,1) 91%);
+    position: relative;
+    left: 100px;
+    top: 80px;
+    border: solid 2px white;
+    border-radius: 10px;    
+}
+
+#log_trabajador {  
+    margin: 10px;
+    padding: 30px;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+.desplegable {
+    margin: 8px;
+    padding: unset;
+    width: fit-content;
+    display: none;
+    position: relative;
+    left: 90px; 
+
+}
+
+.desplegable form{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;    
+}
+
+.despliege{
+    display: block;
+}
+
+#in_ses{
+    color: aliceblue;
+    font-family:'agbalumo', Courier, monospace;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    right: 125px;
+}
+
+.but_ini{
+    position: relative;
+    right: 500px;
+}
+
+header{
+    position: relative;
+    top: -150px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+
+#titulo {
+    color: hsla(182, 73%, 54%, 0.9);
+    font: normal 140px Varela Round, sans-serif;
+    height: 110px;
+    right: 70px;
+    letter-spacing: 3px;
+    margin: -90px 0 0 0;
+    position:relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 30%;
+    width: 80%;
+    animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+0% {
+    text-shadow:
+    4px -4px 0 rgb(253, 251, 251), 
+    3px -3px 0 rgb(253, 251, 251), 
+    2px -2px 0 rgb(253, 251, 251), 
+    1px -1px 0 rgb(253, 251, 251),
+    -4px 4px 0 rgb(38, 86, 175)
+    -3px 3px 0 rgb(38, 86, 175), 
+    -2px 2px 0 rgb(38, 86, 175), 
+    -1px 1px 0 rgb(38, 86, 175);
+    
+}
+
+25% {    
+    text-shadow:      
+    -4px -4px 0 rgb(38, 86, 175), 
+    -3px -3px 0 rgb(38, 86, 175), 
+    -2px -2px 0 rgb(38, 86, 175), 
+    -1px -1px 0 rgb(38, 86, 175),
+    4px 4px 0 rgb(253, 251, 251), 
+    3px 3px 0 rgb(253, 251, 251), 
+    2px 2px 0 rgb(253, 251, 251), 
+    1px 1px 0 rgb(253, 251, 251);
+}
+
+50% {
+    text-shadow:
+    -4px 4px 0 rgb(253, 251, 251), 
+    -3px 3px 0 rgb(253, 251, 251), 
+    -2px 2px 0 rgb(253, 251, 251), 
+    -1px 1px 0 rgb(253, 251, 251),
+    4px -4px 0 rgb(38, 86, 175), 
+    3px -3px 0 rgb(38, 86, 175), 
+    2px -2px 0 rgb(38, 86, 175), 
+    1px -1px 0 rgb(38, 86, 175);
+}
+
+75% {
+    text-shadow:
+    4px 4px 0 rgb(38, 86, 175), 
+    3px 3px 0 rgb(38, 86, 175), 
+    2px 2px 0 rgb(38, 86, 175), 
+    1px 1px 0 rgb(38, 86, 175),
+    -4px -4px 0 rgb(253, 251, 251), 
+    -3px -3px 0 rgb(253, 251, 251), 
+    -2px -2px 0 rgb(253, 251, 251), 
+    -1px -1px 0 rgb(253, 251, 251);
+}
+
+100% {
+    text-shadow:
+    4px -4px 0 rgb(253, 251, 251), 
+    3px -3px 0 rgb(253, 251, 251), 
+    2px -2px 0 rgb(253, 251, 251), 
+    1px -1px 0 rgb(253, 251, 251),
+    -4px 4px 0 rgb(38, 86, 175), 
+    -3px 3px 0 rgb(38, 86, 175), 
+    -2px 2px 0 rgb(38, 86, 175), 
+    -1px 1px 0 rgb(38, 86, 175);
+}  
+}

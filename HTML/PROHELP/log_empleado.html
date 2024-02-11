@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROHELP</title>
+    <link rel="stylesheet" href="style_log_trab.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    
+</head>
+<body class="empleado">
+    <a href="index.html"> <img src="img/boton_inicio.png" height="100px" class="but_ini"></a>
+    <div class="text"> 
+        <h1 id="titulo">BIENVENID@</h1>
+        <h1 id="in_ses"> inicia sesion</h1>
+    </div>
+    <section >
+        <div class="sectemp">
+            <form id="log_trabajador">                
+                <input type="text" id="Usuario" name="Usuario" placeholder="Usuario">
+                <input type="password" id="Pasword" name="Contraseña"  placeholder="Password" >
+                <br><br>
+                <a href="servicios_1.html" ><button type="button" > ingresar </button></a>
+            </form>
+        </div>
+
+        <button class="botDesplegable" type="button" id="hidetext_btn"> registrate </button>
+            <div class="desplegable" id="hidetext">                
+                <form>                                                        
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">                                                                           
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido">
+                    <input type="text" id="Contraseña" name="Contraseña" placeholder="Contraseña">                                                                            
+                    <input type="text" id="NumeroDocumento" name="NumeroDocumento" placeholder="Numero de documento">                                                                       
+                    <input type="text" id="Direccionn" name="Direccion" placeholder="Direccion">                                                                           
+                    <input type="text" id="Barrio" name="Barrio" placeholder="Barrio">                                                                           
+                    <input type="text" id="Telefono" name="Telefono" placeholder="Telefono">                                                                         
+                    <input type="text" id="Fecha_nacimiento" name="Fecha_nacimiento" placeholder="Fecha de nacimiento">                                                                             
+                    <input type="text" id="Correo" name="Correo" placeholder="Correo">
+                    <button type="submit"> Enviar</button>                           
+                </form>
+                    
+            </div>             
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

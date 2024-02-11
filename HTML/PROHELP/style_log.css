@@ -1,0 +1,111 @@
+body{
+    position: relative;
+    top: 10px;
+    left: 550px;    
+}
+
+body.usuario{
+    background-image:url('img/fondo_trab.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: fit-content; 
+}
+
+section{
+    background-size: cover;
+    width: fit-content; 
+    text-align: center;
+    padding: 10px;
+    background: rgb(2,167,96);
+    background: linear-gradient(90deg, rgba(2,167,96,0.6026785714285714) 0%, rgba(9,121,112,1) 48%, rgba(0,212,255,1) 91%);
+    position: relative;
+    left: 160px;
+    top: -190px;
+    border: solid 2px white;
+    border-radius: 10px;    
+}
+
+#log_usuario {  
+    margin: 10px;
+    padding: 30px;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    left: 60;
+}
+
+.desplegable {
+    margin: 8px;
+    padding: unset;
+    width: fit-content;
+    display: none;
+    position: relative;
+    left: 90px; 
+
+}
+
+.desplegable form{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;    
+}
+
+.despliege{
+    display: block;
+}
+
+.area{
+    text-align:center;
+    font-size:8.0em;
+    color:#ffffff;
+    letter-spacing: -6px;
+    font-weight:700;
+    text-transform:uppercase;
+    animation:blur .95s ease-out infinite;
+    text-shadow:0px 0px 5px #3bf883,
+        0px 0px 7px #0f8de0;
+  }
+  
+  @keyframes blur{
+    from{
+        text-shadow:0px 0px 10px #3bf883,
+        0px 0px 10px #3bf883, 
+        0px 0px 25px #3bf883,
+        0px 0px 25px #3bf883,
+        0px 0px 25px #3bf883,
+        0px 0px 25px #3bf883,
+        0px 0px 25px #3bf883,
+        0px 0px 25px #3bf883,
+        0px 0px 50px #3bf883,
+        0px 0px 50px #3bf883,
+        0px 0px 50px #0f8de0,
+        0px 0px 150px #0f8de0,
+        0px 10px 100px #0f8de0,
+        0px 10px 100px #0f8de0,
+        0px 10px 100px #0f8de0,
+        0px 10px 100px #0f8de0,
+        0px -10px 100px #0f8de0,
+        0px -10px 100px #0f8de0;}
+}
+
+.in_ses{
+    color: aliceblue;
+    font-family:'agbalumo', Courier, monospace;
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+.but_ini{
+    position: relative;
+    right: 500px;
+}
+
+header{
+    position: relative;
+    top: -150px;
+}
+
